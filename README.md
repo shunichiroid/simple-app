@@ -1,5 +1,4 @@
-## Reference
-https://cdn.scotch.io/1/First-Node-App.pdf
+# Popular Instagram Photos App
 
 ## To Run:
 
@@ -8,3 +7,6 @@ https://cdn.scotch.io/1/First-Node-App.pdf
 - Add Instagram access_token to serer.js
 - Run the server: node server.js
 - View at: http://localhost:8080
+
+#### Reference
+https://cdn.scotch.io/1/First-Node-App.pdf
