@@ -4,12 +4,14 @@ const app = express()
 
 require('dotenv').config();
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/views/public'))
+
+app.set('view engine', 'ejs')
+
 ig.use({
     access_token: process.env.INSTAGRAM_TOKEN
 })
 
-app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
     ig.user_self_media_recent((err, medias, pagination, remaining, limit) => {
